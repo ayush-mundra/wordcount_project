@@ -1,0 +1,15 @@
+<H1> there are total {{length}} no of words  </H1>
+{{fulltext}}
+<h1> word_counts </h1>
+
+{% for word, countt in sortedlist1 %}
+{{ word }}
+<br>
+{{ countt }}
+<br>
+{% endfor %}
+<br>
+<br>
+<form action="{% url 'aboutus' %}">
+	<input type="submit" width="30px" value="aboutus"></button>
+</form>
